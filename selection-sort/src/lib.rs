@@ -1,5 +1,19 @@
 //! # Implementation of the selection sort algorithm
-//! This is a simple implementation in Rust for the selection sort algorithm
+//! This is a simple implementation in Rust for the selection sort algorithm.
+//! It receives a list of comma separated integer list, tries to parse it and sort it.
+//! The CLI tries to clean up the input like removing extra white spaces, extra commas and
+//! outputs error messages if it receives anything but integers.
+//!
+//! ## Example
+//!
+//! ```sh
+//! cargo run 4, 5,1, 3,10,8, 9, # or selection-sort 4, 5,1, 3,10,8, 9,
+//!
+//! Input list 4,5,1,3,10,8,9
+//! Items count: 7
+//! List is ordered in 28 steps
+//! [1, 3, 4, 5, 8, 9, 10]
+//! ```
 
 ///# The sorting function
 /// This function takes in a mutable vector of i32 and sort it in place using the **selection sort** algorithm.
