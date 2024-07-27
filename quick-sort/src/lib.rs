@@ -118,6 +118,14 @@ mod quick_sort_sort_tests {
     }
 
     #[test]
+    fn test_quick_sort_with_dupes() {
+        let list = vec![3, 4, 1, 5, 7, 3, 4];
+        let mut steps = 0;
+        let list_sorted = qsort(&list, &mut steps);
+        assert_eq!(list_sorted, vec![1, 3, 3, 4, 4, 5, 7]);
+    }
+
+    #[test]
     fn test_pars_input() {
         let args1 = vec!["name", "5,4,2,1,3"]
             .into_iter()
