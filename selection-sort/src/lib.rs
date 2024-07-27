@@ -7,7 +7,7 @@
 //! ## Example
 //!
 //! ```sh
-//! cargo run 4, 5,1, 3,10,8, 9, # or selection-sort 4, 5,1, 3,10,8, 9,
+//! $ cargo run 4, 5,1, 3,10,8, 9, # or selection-sort 4, 5,1, 3,10,8, 9,
 //!
 //! Input list 4,5,1,3,10,8,9
 //! Items count: 7
