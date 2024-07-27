@@ -48,13 +48,19 @@ pub fn qsort(array: &Vec<i32>, steps: &mut usize) -> Vec<i32> {
             .cloned()
             .collect::<Vec<i32>>();
 
+        let equal = array
+            .iter()
+            .filter(|item| *item == pivot)
+            .cloned()
+            .collect::<Vec<i32>>();
+
         let greater = array
             .iter()
             .filter(|item| *item > pivot)
             .cloned()
             .collect::<Vec<i32>>();
 
-        [qsort(&less, steps), vec![*pivot], qsort(&greater, steps)].concat()
+        [qsort(&less, steps), equal, qsort(&greater, steps)].concat()
     }
 }
 
