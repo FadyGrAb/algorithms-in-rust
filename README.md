@@ -10,3 +10,4 @@ Keep in mind that I'm still learning Rust so the code here might not be the most
 - [Selection Sort](/selection-sort/)
 - [Recursion](/recursive-factorial/)
 - [Quick Sort](/quick-sort/)
+- [Breadth-first search](/breadth-first-search/)
